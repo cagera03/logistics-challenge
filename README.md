@@ -62,6 +62,11 @@ logistics-challenge/
 
 - **PuLP over OR-Tools**: declarative formulation reads like the math; the
   CBC solver ships with the package, so the evaluator installs nothing extra.
+- **ML stack (scikit-learn + XGBoost + SHAP)**: scikit-learn for its consistent
+  API and RandomForest as a robust no-tuning baseline; XGBoost for native class
+  imbalance handling (`scale_pos_weight`) and exact TreeSHAP support; SHAP for
+  interpretability grounded in Shapley values rather than heuristic importances.
+  The two forecast models are picked by empirical comparison (lowest MAPE wins).
 - **Sensitivity = scenario sweep + duals**: besides the +20% sweep, the LP's
   capacity **shadow prices** (constraint duals) are reported — by complementary
   slackness only binding warehouses are priced, and the largest |dual| is the
