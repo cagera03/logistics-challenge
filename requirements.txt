@@ -1,0 +1,8 @@
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+pulp==2.8.0
+scikit-learn==1.4.2
+xgboost==2.0.3
+shap==0.45.1
+pytest==8.2.0
