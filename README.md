@@ -55,7 +55,7 @@ logistics-challenge/
 │                       #   agent tool-use, determinism)
 ├── main.py             # single entry point
 ├── requirements.txt
-└── report.pdf          # executive report (Spanish, 2 pages)
+└── report.pdf          # executive report (Spanish, 3 pages)
 ```
 
 ## Design decisions (summary — full rationale in report.pdf)
